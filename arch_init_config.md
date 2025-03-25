@@ -116,3 +116,12 @@ alias nvf='nvim $(fzf)'   # 用 fzf 快速 fuzzy 选文件用 nvim 打开
 alias cdf='cd $(fd --type d | fzf)' # fuzzy 选个目录进入
 ```
 
+```
+# Caps Lock和Esc键互换
+sudo pacman -S dconf-editor
+## 打开 dconf-editor
+org → gnome → desktop → input-sources
+## 修改 xkb-options 为：
+['caps:swapescape']
+```
+
